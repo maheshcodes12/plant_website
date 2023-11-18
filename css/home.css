@@ -1,0 +1,57 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+.miniHeader {
+	margin: 0;
+	padding: 10px;
+	background-color: #01370c;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	width: 100%;
+}
+.navMenu {
+	padding: 13.33px 10px;
+	font-size: 1.2rem;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+}
+.navMenu div:hover {
+	color: #3b823e;
+}
+.cart-user {
+	width: 7.5%;
+	display: flex;
+	justify-content: space-between;
+}
+.cart-user img {
+	padding: 0 10px;
+}
+.searchInput {
+	border-radius: 10px;
+	border-color: black;
+	padding: 7px;
+	font-size: 1rem;
+	background: url("/assets/Home/small/search_black_24dp\ 1.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.searchInput:focus,
+.searchInput:active {
+	border-radius: 10px;
+	border-color: black;
+	padding: 7px;
+	font-size: 1rem;
+	background: none;
+}
+.heroBanner {
+	height: 320px;
+	width: 100%;
+	background: url("/assets/Home/big/Hero Banner.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
