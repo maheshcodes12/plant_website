@@ -21,12 +21,22 @@ body {
 	align-items: center;
 	justify-content: space-around;
 }
+.navbarImg img {
+	margin-left: 0.5em;
+}
+.navbarImg {
+	transition: transform 0.3s ease;
+}
+.navbarImg:hover {
+	transform: scale(1.1);
+}
 .navMenu div:hover {
 	color: #3b823e;
 }
 .cart-user {
 	width: 7.5%;
 	display: flex;
+	gap: 0.8em;
 	justify-content: space-between;
 }
 .cart-user img {
@@ -36,6 +46,7 @@ body {
 	border-radius: 10px;
 	border-color: black;
 	padding: 7px;
+	color: #01370c;
 	font-size: 1rem;
 	background: url("/assets/Home/small/search_black_24dp\ 1.svg");
 	background-repeat: no-repeat;
@@ -65,6 +76,13 @@ body {
 	margin-bottom: 10px;
 	text-align: end;
 }
+.seeAll:hover {
+	color: #3b823e;
+}
+.seeAll img {
+	height: 12px;
+	width: 12px;
+}
 .Catagories {
 	margin: 0;
 	display: flex;
@@ -76,6 +94,11 @@ body {
 .Catagories img {
 	height: 180px;
 	width: 180px;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+}
+.CatagoriesImg:hover img {
+	transform: scale(1.1);
 }
 .Catagories div {
 	display: flex;
@@ -87,6 +110,12 @@ body {
 	letter-spacing: 2px;
 }
 /* ///////////////////////////////////////////////////////// */
+.hoverButton {
+	transition: transform 0.3s ease;
+}
+.hoverButton:hover {
+	transform: scale(1.05);
+}
 .bestSelling,
 .trendingPlantsSection,
 .hotSaleSection,
@@ -96,7 +125,8 @@ body {
 .bestSellingText,
 .trendingPlantsText,
 .hotSaleText,
-.plantersText {
+.plantersText,
+.celebsText {
 	text-align: center;
 	font-size: 3em;
 	font-family: "Unna", sans-serif;
@@ -104,7 +134,8 @@ body {
 .UnderlineBestSellingText,
 .UnderlinetrendingPlantsText,
 .UnderlinehotSaleText,
-.UnderlinePlantersText {
+.UnderlinePlantersText,
+.UnderlineCelebsText {
 	width: 15%;
 	align-items: end;
 	color: black;
@@ -137,6 +168,7 @@ body {
 	box-shadow: black;
 	background-color: white;
 	padding: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .trendingPlantsFrame,
 .hotSaleFrame,
@@ -184,7 +216,115 @@ body {
 	font-size: 0.9em;
 }
 .starImg {
-	position: relative;
-	height: 6px;
-	width: 6px;
+	position: absolute;
+	background: url("/assets/Home/small/Star\ 1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 3em;
+	width: 3em;
+	color: white;
+	line-height: 0;
+	padding: 5px;
+	text-align: center;
+	align-self: flex-end;
+	margin: 0.7% 0.5%;
+}
+/* /////////////////////////////////////// */
+.landscape {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 5%;
+	margin-bottom: 90px;
+}
+.landscapeText {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.landscape h2 {
+	font-size: 3em;
+	font-family: "Unna", sans-serif;
+	text-align: left;
+	font-weight: 600;
+	margin: 0;
+}
+.landscape hr {
+	width: 33%;
+	margin-left: 0%;
+}
+.landscape p {
+	font-size: 1.25em;
+	font-family: "Open Sans", sans-serif;
+}
+.landscapeRedText {
+	font-size: 1em;
+	font-style: italic;
+	color: #d11f1f;
+}
+.landscape button {
+	font-size: 1em;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	background-color: #3b823e;
+	border: none;
+	border-radius: 5px;
+	padding: 1em 5em;
+	align-self: baseline;
+}
+/* ////////////////////////////////////////////// */
+.celebs {
+	margin: 0 5%;
+	margin-bottom: 120px;
+}
+.celebsGrid1,
+.celebsGrid2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.celebsGrid1 img {
+	height: 310px;
+	width: 285px;
+}
+.celebsGrid2 img {
+	height: 310px;
+	width: 387px;
+}
+/* /////////////////////////////////////////////////// */
+.footer {
+	background-color: #3b823e;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 5%;
+	gap: 10px;
+}
+.footerFrame1 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	line-height: 2em;
+}
+.footerFrame2 {
+	display: flex;
+	gap: 40px;
+}
+.ff2Text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.links {
+	display: flex;
+	gap: 1em;
+}
+.minifooter {
+	color: white;
+	background-color: #01370c;
+	text-align: center;
+	font-size: 1em;
+	padding: 1rem;
 }
