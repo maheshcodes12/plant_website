@@ -1,6 +1,7 @@
 body {
 	height: 100%;
 	width: 100%;
+	background-color: #e5e5e5;
 }
 .miniHeader {
 	margin: 0;
@@ -48,10 +49,142 @@ body {
 	font-size: 1rem;
 	background: none;
 }
-.heroBanner {
+.heroBanner img {
 	height: 320px;
 	width: 100%;
-	background: url("/assets/Home/big/Hero Banner.png");
+	margin-bottom: 30px;
+	/* background: url("/assets/Home/big/Hero Banner.png");
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
+}
+.plantCatagories {
+	margin: 0px 90px;
+}
+.seeAll {
+	margin-right: 40px;
+	margin-bottom: 10px;
+	text-align: end;
+}
+.Catagories {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 90px;
+}
+.Catagories img {
+	height: 180px;
+	width: 180px;
+}
+.Catagories div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+/* ///////////////////////////////////////////////////////// */
+.bestSelling,
+.trendingPlantsSection,
+.hotSaleSection,
+.plantersSection {
+	margin-bottom: 90px;
+}
+.bestSellingText,
+.trendingPlantsText,
+.hotSaleText,
+.plantersText {
+	text-align: center;
+	font-size: 3em;
+	font-family: "Unna", sans-serif;
+}
+.UnderlineBestSellingText,
+.UnderlinetrendingPlantsText,
+.UnderlinehotSaleText,
+.UnderlinePlantersText {
+	width: 15%;
+	align-items: end;
+	color: black;
+	margin-bottom: 30px;
+}
+.CardsBestSelling,
+.trendingPlants,
+.hotSale,
+.planters {
+	margin: 0% 5%;
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.CardsBestSelling div,
+.trendingPlants div,
+.hotSale div,
+.planters div {
+	border-radius: 10px;
+}
+.CardFrame,
+.trendingPlantsFrame,
+.hotSaleFrame,
+.bestSellingFrame,
+.plantersFrame {
+	display: flex;
+	flex-direction: column;
+	box-shadow: black;
+	background-color: white;
+	padding: 20px;
+}
+.trendingPlantsFrame,
+.hotSaleFrame,
+.plantersFrame {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+.CardFrame img {
+	height: 318px;
+	width: 344px;
+	margin-bottom: 1em;
+}
+.CardFrame button {
+	color: white;
+	background-color: #3b823e;
+	font-weight: 500;
+	padding: 1em;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+.trendingPlantsFrame img,
+.hotSaleFrame img,
+.plantersFrame img {
+	height: 176px;
+	width: 242px;
+	margin-bottom: 1em;
+}
+.trendingPlantsFrame button,
+.hotSaleFrame button,
+.plantersFrame button {
+	margin-top: 1em;
+	color: white;
+	background-color: #3b823e;
+	font-weight: 500;
+	padding: 1em;
+	border: none;
+	border-radius: 10px;
+	font-size: 1em;
+}
+.hotSaleFrameSpan,
+.plantersSpan {
+	color: #d11f1f;
+	text-decoration: line-through;
+	font-size: 0.9em;
+}
+.starImg {
+	position: relative;
+	height: 6px;
+	width: 6px;
 }
