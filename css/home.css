@@ -1,5 +1,4 @@
 body {
-	height: 100%;
 	width: 100%;
 	background-color: #e5e5e5;
 }
@@ -165,7 +164,6 @@ body {
 .plantersFrame {
 	display: flex;
 	flex-direction: column;
-	box-shadow: black;
 	background-color: white;
 	padding: 20px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

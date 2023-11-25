@@ -1,0 +1,163 @@
+.navMenu {
+	margin-bottom: 60px;
+}
+.navMenuHr {
+	height: 1px;
+	width: 100%;
+	background-color: black;
+	border: none;
+}
+.hoverButton {
+	transition: transform 0.3s ease;
+}
+.hoverButton:hover {
+	transform: scale(1.1);
+}
+.TotalPrice button {
+	color: white;
+	background-color: #3b823e;
+	font-weight: 500;
+	padding: 1em 3em;
+	border: none;
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+.cartItemsSection,
+.login,
+.emptyCart {
+	text-align: center;
+	padding: 1em;
+	background-color: #f0f5f0;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	margin: 0% 5%;
+	margin-bottom: 60px;
+	padding-top: 2em;
+	border-radius: 10px;
+}
+.emptyCart {
+	display: none;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 1em;
+	font-size: 2em;
+	font-family: "Open Sans", sans-serif;
+}
+.emptyCart .text {
+	color: black;
+	font-weight: 600;
+	text-decoration: underline;
+	font-size: 0.5em;
+}
+.cartItemsText {
+	text-align: center;
+	font-size: 3em;
+	font-family: "Unna", sans-serif;
+}
+.UnderlineCartItemsText {
+	width: 15%;
+	height: 1px;
+	background-color: darkgrey;
+	border: none;
+	margin-bottom: 30px;
+}
+/* /////////////////////////////////// */
+.cartItems table {
+	padding: 2%;
+	text-align: center;
+	width: 98%;
+	margin: auto;
+	border-collapse: collapse; /*NEWNEWNEWNEW*/
+	vertical-align: middle;
+	font-size: 1em;
+}
+.ProductNameHeader {
+	text-align: left;
+}
+.cartItemsTable td,
+th {
+	padding: 1.5em;
+}
+.cartItemsTable td:not(.NotBorder) {
+	border-top: 1px solid darkgray;
+}
+/* /////// */
+.productName {
+	display: flex;
+	gap: 1.5em;
+	text-align: left;
+}
+.Name {
+	font-weight: 500;
+	padding-top: 0.5em;
+	font-size: 1.25em;
+	margin-bottom: 1.5em;
+}
+.removeText {
+	color: #343434;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* ///////*/
+.quantityButtons {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 0;
+	border: 1px solid black;
+	width: 5.5em;
+	padding: 1px;
+	height: 2em;
+	text-align: center;
+	margin: auto;
+	border-radius: 10px;
+}
+
+/* Hide the default number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield; /* Firefox */
+}
+/* Remove default input focus outline and add a custom focus style */
+input[type="number"] {
+	border: none;
+}
+
+input[type="number"]:focus {
+	outline: none;
+}
+/*-moz-apperance is for firefox browser*/
+
+.minusButton,
+#quantityInput,
+.plusButton {
+	background-color: inherit;
+	border: none;
+	text-align: center;
+	width: 33.3%;
+}
+#quantityInput:focus,
+#quantityInput:active {
+	border: none;
+}
+.Subtotal {
+	line-height: 2em;
+	border: none;
+}
+.TotalPrice {
+	font-weight: 600;
+}
+/* //////////////////// */
+.login {
+	padding: 1.5em;
+	text-align: left;
+}
+.login a {
+	font-weight: 600;
+	color: black;
+	font-size: 1.1rem;
+	text-decoration: none;
+}

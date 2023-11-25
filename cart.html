@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cart</title>
+		<link rel="stylesheet" href="/css/home.css" />
+		<link rel="stylesheet" href="/css/cart.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat&family=Dongle:wght@300;400&family=Montserrat&family=Open+Sans:wght@500&family=Roboto+Condensed:wght@300&family=Rubik+Puddles&family=Sacramento&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat&family=Dongle:wght@300;400&family=Montserrat&family=Open+Sans:wght@500&family=Roboto+Condensed:wght@300&family=Rubik+Puddles&family=Sacramento&family=Unna&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="navMenu">
+			<div class="PAPlogo">
+				<a href="index.html"
+					><img src="assets/Home/small/PAP Logo.svg" alt="logo"
+				/></a>
+			</div>
+			<div class="navbarImg">
+				Home
+				<img src="./assets/Home/small/Vector.svg" alt="arrow" />
+			</div>
+			<div class="navbarImg">
+				Plants<img src="./assets/Home/small/Vector.svg" alt="arrow" />
+			</div>
+			<div class="navbarImg">
+				Planters<img src="./assets/Home/small/Vector.svg" alt="arrow" />
+			</div>
+			<div class="navbarImg">
+				Essentials<img
+					src="./assets/Home/small/Vector.svg"
+					alt="arrow"
+				/>
+			</div>
+			<div class="navbarImg">
+				Services<img src="./assets/Home/small/Vector.svg" alt="arrow" />
+			</div>
+			<div class="search">
+				<input type="text" class="searchInput" placeholder="Search" />
+			</div>
+			<div class="cart-user">
+				<div class="navbarImg">
+					<img
+						src="./assets/Home/small/shopping-cart.png"
+						alt="cart"
+						height="24px"
+						width="24px"
+					/>
+				</div>
+				<div class="navbarImg">
+					<img
+						src="./assets/Home/small/user.png"
+						alt="account"
+						height="24px"
+						width="24px"
+					/>
+				</div>
+			</div>
+			<hr class="navMenuHr" />
+		</div>
+		<div class="emptyCart">
+			<div>Your Cart is empty</div>
+			<div><a href="index.html" class="text">Continue shopping</a></div>
+		</div>
+		<div class="cartItemsSection">
+			<div class="cartItemsText">
+				Your Cart Items
+				<hr class="UnderlineCartItemsText" />
+			</div>
+			<div class="cartItems" style="overflow-x: auto">
+				<table class="cartItemsTable">
+					<tr>
+						<th></th>
+						<th class="ProductNameHeader">Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td class="productName">
+							<div>
+								<a href="#"
+									><img
+										src="assets/Cart/Plant1.png"
+										alt="Plant1"
+								/></a>
+							</div>
+							<div>
+								<div class="Name">Product Name</div>
+								<div class="removeText">Remove</div>
+							</div>
+						</td>
+						<td>$ 99</td>
+						<td>
+							<div class="quantityButtons">
+								<button class="plusButton">+</button>
+								<input
+									type="number"
+									name=""
+									value="1"
+									id="quantityInput"
+								/>
+								<button class="minusButton">-</button>
+							</div>
+						</td>
+						<td>$ 99</td>
+					</tr>
+
+					<tr>
+						<td>2</td>
+						<td class="productName">
+							<div>
+								<a href="#"
+									><img
+										src="assets/Cart/Plant2.png"
+										alt="Plant2"
+								/></a>
+							</div>
+							<div>
+								<div class="Name">Product Name</div>
+								<div class="removeText">Remove</div>
+							</div>
+						</td>
+						<td>$ 99</td>
+						<td>
+							<div class="quantityButtons">
+								<button class="plusButton">+</button>
+								<input
+									type="number"
+									name=""
+									value="1"
+									id="quantityInput"
+								/>
+								<button class="minusButton">-</button>
+							</div>
+						</td>
+						<td>$ 99</td>
+					</tr>
+					<tr class="Subtotal">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<div>Subtotal</div>
+							<div>Shipping</div>
+						</td>
+						<td>
+							<div>$ 99</div>
+							<div>Flat Rate</div>
+						</td>
+					</tr>
+					<tr class="TotalPrice">
+						<td class="NotBorder">
+							<button class="hoverButton">Checkout</button>
+						</td>
+						<td class="NotBorder"></td>
+						<td class="NotBorder"></td>
+						<td>
+							<div>Total</div>
+						</td>
+						<td>
+							<div>$ 198</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="login">
+			Returning Customer?
+			<span><a href="#">Click Here to Login.</a></span>
+		</div>
+		<div class="footer">
+			<div class="footerFrame1">
+				<div>
+					<img src="/assets/Home/small/PAP Logo 1.png" alt="logo" />
+				</div>
+				<div>
+					<h4>Quick Links</h4>
+					<div class="hoverButton">About Us</div>
+					<div class="hoverButton">Bulk Order</div>
+					<div class="hoverButton">Gifts</div>
+					<div class="hoverButton">Organic Garden</div>
+				</div>
+				<div>
+					<h4>Legal</h4>
+					<div class="hoverButton">T&C</div>
+					<div class="hoverButton">Privacy Policy</div>
+					<div class="hoverButton">Returns</div>
+					<div class="hoverButton">Shipping</div>
+					<div class="hoverButton">Cancellation</div>
+				</div>
+				<div>
+					<h4>Support</h4>
+					<div class="hoverButton">FAQs</div>
+					<div class="hoverButton">Contact Us</div>
+				</div>
+			</div>
+			<div class="footerFrame2">
+				<div>
+					<img
+						src="/assets/Home/small/Compant Badge.png"
+						alt="Compant Badge"
+						height="160px"
+						width="178px"
+					/>
+				</div>
+				<div class="ff2Text">
+					<div>© 2023 Plan A Plant <br />All Rights Reserved</div>
+					<div class="links">
+						<img
+							src="/assets/Home/small/Facebook.svg"
+							alt="facebook"
+							class="hoverButton"
+						/>
+						<img
+							src="/assets/Home/small/Twitter.svg"
+							alt="twitter"
+							class="hoverButton"
+						/>
+						<img
+							src="/assets/Home/small/insta.svg"
+							alt="insta"
+							class="hoverButton"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="minifooter">
+			This website is intended for educational use only.
+		</div>
+	</body>
+</html>

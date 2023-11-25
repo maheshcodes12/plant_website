@@ -1,0 +1,23 @@
+.heroImg {
+	background: url("/assets/product/Hero\ Banner.png");
+	height: 320px;
+	width: 100%;
+	margin-bottom: 60px;
+}
+.mainBody {
+	display: flex;
+	justify-content: space-between;
+	margin: 0% 5%;
+	align-items: center;
+}
+.filters div,
+.products div {
+	text-align: center;
+	padding: 1em;
+	background-color: #f0f5f0;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	margin: 0% 5%;
+	margin-bottom: 60px;
+	padding-top: 2em;
+	border-radius: 10px;
+}
